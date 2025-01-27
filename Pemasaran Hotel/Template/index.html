@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel JAVANESIA</title>
+</head>
+<body>
+    <h1>Selamat Datang di Sistem Pemesanan Hotel JAVANESIA</h1>
+    <h2>Informasi Kamar</h2>
+    <ul>
+        <li>{{ kamar1 }}</li>
+        <li>{{ kamar2 }}</li>
+    </ul>
+    <h2>Pesan Kamar</h2>
+    <form action="/pesan" method="post">
+        <label for="tipe">Pilih Tipe Kamar:</label>
+        <select name="tipe" id="tipe">
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suite">Suite</option>
+        </select>
+        <button type="submit">Pesan</button>
+    </form>
+</body>
+</html>
